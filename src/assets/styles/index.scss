@@ -1,0 +1,226 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  scroll-behavior: smooth;
+}
+
+:root::-webkit-scrollbar {
+  width: 10px;
+  background: rgb(236, 209, 129);
+}
+
+:root::-webkit-scrollbar-thumb {
+  width: 10px;
+  background: rgb(174, 7, 18);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+
+.text-shadow-manual {
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.25);
+}
+
+@media screen and (max-width: 640px) {
+  #main-index {
+    background-image: url("../../assets/images/mainBackground-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 641px) {
+  #root {
+    background-image: url("../../assets/images/main-back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+
+.animate-rotate {
+  animation: rotate 0.7s cubic-bezier(1, 1, 1, 1) infinite;
+}
+
+@at-root {
+  @keyframes rotate {
+    from {
+      transform: scale(0.8) rotateX(0);
+    }
+    to {
+      transform: scale(0.8) rotateX(360deg);
+    }
+  }
+}
+
+$index-jackpot-item: 0;
+
+$data-index-count : attr(data-index);
+
+#jackpot-section > div {
+  transition-timing-function: ease-in-out;
+  transition: 0.3s;
+}
+
+
+//
+//@media screen and (max-width: 640px) {
+//  #main-index {
+//    background-image: url("../../assets/images/mainBackground-mobile.png");
+//    background-position: top;
+//    background-repeat: no-repeat;
+//    background-size: cover;
+//  }
+//  #jackpot-section {
+//    position: relative;
+//    transform-style: preserve-3d;
+//    height: 60px;
+//    //transform: rotate3d(1,1,1, 135deg);
+//    #jackpot-item {
+//      position: absolute;
+//      perspective: 700px;
+//
+//      div {
+//        //background: black;
+//      }
+//
+//      &:nth-child(2) {
+//        transform: translateY(-100%) translateZ(30px) rotateX(90deg);
+//        transform-origin: bottom;
+//
+//        div {
+//          //background: gray;
+//        }
+//      }
+//
+//      &:nth-child(3) {
+//        transform: translateY(0) translateZ(30px) rotateX(90deg);
+//        transform-origin: bottom;
+//
+//        div {
+//          //background: red;
+//        }
+//      }
+//
+//      &:nth-child(4) {
+//        transform: translateY(0) translateZ(-30px);
+//
+//        div {
+//          //background: yellow;
+//        }
+//      }
+//
+//      &:nth-child(5) {
+//        transform: translateY(0) translateZ(30px);
+//
+//        div {
+//          //background: orange;
+//        }
+//      }
+//    }
+//  }
+//}
+//
+//@media screen and (min-width: 641px) {
+//  #root {
+//    background-image: url("../../assets/images/main-back.png");
+//    background-position: top;
+//    background-repeat: no-repeat;
+//    background-size: cover;
+//  }
+//
+//  #jackpot-section {
+//    position: relative;
+//    transform-style: preserve-3d;
+//    //transform: rotate3d(1,1,1, 10deg);
+//    height: 100px;
+//    #jackpot-item {
+//      border: 3px solid red;
+//      position: absolute;
+//      perspective: 700px;
+//      div {
+//        background: white;
+//      }
+//      &:nth-child(1) {
+//        transform:  rotateY(36deg) translateZ(55px);
+//        transform-origin: bottom;
+//        div {
+//          background: transparent;
+//        }
+//      }
+//      &:nth-child(2) {
+//        transform:  rotateY(36deg) translateZ(55px);
+//        transform-origin: bottom;
+//        div {
+//          // background: gray;
+//        }
+//      }
+//
+//      &:nth-child(3) {
+//        transform:  rotateY(72deg) translateZ(55px);
+//        transform-origin: bottom;
+//        div {
+//          // background: red;
+//        }
+//      }
+//
+//      &:nth-child(4) {
+//        transform:  rotateY(108deg) translateZ(55px);
+//        transform-origin: bottom;
+//        div {
+//          // background: yellow;
+//        }
+//      }
+//
+//      &:nth-child(5) {
+//        transform:  rotateY(144deg) translateZ(55px);
+//        transform-origin: bottom;
+//        div {
+//          // background: black;
+//        }
+//      }
+//
+//      &:nth-child(6) {
+//        transform:  rotateY(180deg) translateZ(55px);
+//        transform-origin: bottom;
+//        div {
+//          // background: your-color;
+//        }
+//      }
+//
+//      &:nth-child(7) {
+//        transform:  rotateY(216deg) translateZ(55px);
+//        transform-origin: bottom;
+//        div {
+//          // background: your-color;
+//        }
+//      }
+//
+//      &:nth-child(8) {
+//        transform:  rotateY(252deg) translateZ(55px);
+//        transform-origin: bottom;
+//        div {
+//          // background: your-color;
+//        }
+//      }
+//
+//      &:nth-child(9) {
+//        transform:  rotateY(288deg) translateZ(55px);
+//        transform-origin: bottom;
+//        div {
+//          // background: your-color;
+//        }
+//      }
+//
+//      &:nth-child(10) {
+//        transform:  rotateY(324deg) translateZ(55px);
+//        transform-origin: bottom;
+//        div {
+//          // background: your-color;
+//        }
+//      }
+//    }
+//  }
+//}
