@@ -1,4 +1,4 @@
-function OrangeButton({width = "380", className = '', text = "", disable = false, event, sibling = null}) {
+function OrangeButton({width = "380", className = '', text , disable = false, event, sibling = null}) {
     return (
         <button
             onClick={event}
@@ -11,9 +11,13 @@ function OrangeButton({width = "380", className = '', text = "", disable = false
             text-xl
             active:scale-95 active:opacity-75
             w-[${width}px] ${className}`}>
-            {sibling && (
+            {sibling ? (
                 <>
                     {sibling}
+                    {text}
+                </>
+            ):(
+                <>
                     {text}
                 </>
             )}

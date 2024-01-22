@@ -1,7 +1,7 @@
 function Guide() {
     return (
-        <footer dir="rtl" className="w-full flex flex-wrap  ">
-            <h2 id={'info'} className="w-full m-0 text-white text-xl text-shadow-manual font-bold">
+        <footer dir="rtl" className="w-full flex flex-wrap mt-20 ">
+            <h2 id={'info'} className="w-full m-0 p-3 text-white text-xl text-shadow-manual font-bold">
                 راهنما و توضیحات کمپین
             </h2>
             <p className="w-full my-10 flex flex-wrap text-justify p-5 text-white mt-2 leading-relaxed backdrop-blur">
