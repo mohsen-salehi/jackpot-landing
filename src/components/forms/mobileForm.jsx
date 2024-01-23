@@ -13,7 +13,7 @@ function MobileForm({placeHolder}) {
     const onSubmit = (data) => console.log(data)
 
 
-    return (<form dir="rtl" className="w-[382px] md:w-[412px] bg-white flex flex-wrap rounded-[20px] shadow p-5"
+    return (<form className="w-[382px] md:w-[412px] bg-white flex flex-wrap rounded-[20px] shadow p-5"
                   onSubmit={handleSubmit(onSubmit)}>
             <MobileInput
                 className={errors.mobile && "focus:outline-red-400 border-red-500"}

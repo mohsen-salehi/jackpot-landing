@@ -68,18 +68,6 @@ $data-index-count : attr(data-index);
   transition: 0.2s;
 }
 
-
-#otp_code {
-  padding:10px 10px;
-  font-family:monospace;
-  width: calc(4*(3ch + 20px));
-  font-size:20px;
-  letter-spacing:50px;
-  background:
-          repeating-linear-gradient(to right, #ff8800 0 4ch,transparent 4ch calc(4ch + 5px))
-          bottom/100% 2px content-box no-repeat;
-}
-
 //
 //@media screen and (max-width: 640px) {
 //  #main-index {

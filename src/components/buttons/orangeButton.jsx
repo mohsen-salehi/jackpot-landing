@@ -3,7 +3,7 @@ function OrangeButton({width = "380", className = '', text , disable = false, ev
         <button
             onClick={event}
             disabled={disable}
-            className={`bg-elanza-orange flex flex-wrap items-center justify-center text-white p-3 rounded-20
+            className={`bg-elanza-orange flex flex-wrap items-center justify-center text-white  rounded-20
             duration-100
             h-[66px]
             font-bold

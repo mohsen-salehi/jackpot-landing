@@ -12,7 +12,7 @@ function JackpotSection() {
         <section className="flex flex-wrap relative  min-h-[70vh] overflow-hidden  p-5  justify-center content-evenly">
             <HeroTitle/>
             <div
-                className="w-full  absolute left-[10%] md:left-16 top-[35%]  h-[150px] md:h-[300px] flex flex-wrap justify-center items-center  bg-center bg-contain bg-no-repeat bg-jackpot-handler">
+                className="w-full  absolute left-[10%] md:left-16 top-[50%] md:top-[35%]  h-[150px] md:h-[300px] flex flex-wrap justify-center items-center  bg-center bg-contain bg-no-repeat bg-jackpot-handler">
             </div>
             <section
                 className="relative  bg-hero-pattern bg-contain bg-no-repeat bg-center flex flex-wrap content-between h-[250px]  md:h-[500px] w-[260px]  md:w-[500px] ">

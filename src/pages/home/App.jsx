@@ -10,7 +10,7 @@ function App() {
     return (
         <Layout>
             <section id="main-index"
-                     className="w-full m-0 p-0 flex flex-wrap  md:h-auto  overflow-hidden justify-center items-center">
+                     className="w-full container  w-screen mx-auto m-0 p-0 flex flex-wrap  md:h-auto  overflow-hidden justify-center items-center">
                 <JackpotSection/>
                 <FormSection/>
                 <Guide/>
